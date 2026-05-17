@@ -1,0 +1,358 @@
+﻿/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Елегантний класичний шрифт */
+}
+
+body {
+    background-color: #fcfaf7;
+    color: #2b2024;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Колірна палітра оригінального сайту: Бордовий (#581825 або #420d17) та Золотий (#d4af37) */
+.gold-text {
+    color: #c5a059;
+}
+
+/* Шапка сайту */
+.header {
+    background-color: #31050e;
+    color: #fff;
+    padding: 25px 0;
+    border-bottom: 2px solid #c5a059;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+.header-date {
+    font-size: 1.1rem;
+    border: 1px solid #c5a059;
+    padding: 5px 15px;
+    letter-spacing: 1px;
+    color: #c5a059;
+}
+
+/* Головний екран (Hero) */
+.hero {
+    background: linear-gradient(135deg, #420d17 0%, #200208 100%);
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    border-bottom: 4px solid #c5a059;
+}
+
+.hero-top-text {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c5a059;
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.special-badge {
+    background-color: rgba(197, 160, 89, 0.15);
+    border: 1px solid #c5a059;
+    padding: 15px 20px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.section-title-main {
+    font-size: 1.6rem;
+    font-weight: normal;
+    max-width: 850px;
+    margin: 0 auto 40px;
+    color: #f5ebe0;
+    font-family: Arial, sans-serif; /* Для контрасту сучасний шрифт */
+}
+
+.hero-meta {
+    margin-bottom: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.meta-item {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.btn-gold {
+    display: inline-block;
+    background-color: #c5a059;
+    color: #fff;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: background 0.3s;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.btn-gold:hover {
+    background-color: #b08d4b;
+}
+
+/* Програма секції */
+.program-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.block-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #420d17;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.block-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #c5a059;
+    margin: 10px auto 0;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.program-card {
+    background-color: #fdfbf9;
+    border: 1px solid #eae1d8;
+    padding: 20px;
+    font-size: 1.1rem;
+    border-left: 4px solid #420d17;
+    font-family: Arial, sans-serif;
+}
+
+.program-card span {
+    margin-right: 8px;
+}
+
+/* Бонуси та Сертифікати */
+.details-section {
+    padding: 60px 0;
+    background-color: #f7f3ed;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.details-block {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #e1d7cb;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.details-block h3 {
+    color: #420d17;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eae1d8;
+    padding-bottom: 10px;
+}
+
+.details-block ul {
+    list-style-type: none;
+}
+
+.details-block li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.details-block li::before {
+    content: '•';
+    color: #c5a059;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+.accreditation {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.bpr-box {
+    background-color: #fcf8f2;
+    border: 1px dashed #c5a059;
+    padding: 15px;
+}
+
+.bpr-box h4 {
+    color: #420d17;
+    margin-bottom: 10px;
+}
+
+.bpr-box p {
+    font-family: Arial, sans-serif;
+    margin-bottom: 5px;
+}
+
+/* Форма реєстрації */
+.form-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.form-wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+    border: 1px solid #e1d7cb;
+    padding: 40px;
+    background-color: #fdfcfb;
+    box-shadow: 0 10px 30px rgba(66, 13, 23, 0.05);
+}
+
+.form-wrapper h2 {
+    text-align: center;
+    color: #420d17;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #420d17;
+    font-size: 0.9rem;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.input-group input:focus, .input-group select:focus {
+    outline: none;
+    border-color: #c5a059;
+}
+
+.grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.checkbox-container {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.checkbox-container input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #420d17;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+.btn-submit:hover {
+    background-color: #5e1422;
+}
+
+.official-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.95rem;
+    font-family: Arial, sans-serif;
+}
+
+.official-link a {
+    color: #420d17;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #420d17;
+}
+
+/* Підвал */
+.footer {
+    background-color: #200208;
+    color: #8c767a;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9rem;
+    font-family: Arial, sans-serif;
+    border-top: 2px solid #c5a059;
+}
