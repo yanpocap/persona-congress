@@ -82,46 +82,46 @@
 <form action="https://formspree.io/f/maqkwreo" method="POST">
                     <div class="input-group">
                         <label>ПІБ *</label>
-                        <input type="text" placeholder="Іванов Іван Іванович" required>
+                        <input type="text" name="ПІБ" placeholder="Іванов Іван Іванович" required>
                     </div>
 
                     <div class="input-group">
                         <label>Телефон *</label>
-                        <input type="tel" placeholder="+380" required>
+                        <input type="tel" name="Телефон" placeholder="+380" required>
                     </div>
 
                     <div class="input-group">
                         <label>Електронна пошта *</label>
-                        <input type="email" placeholder="example@mail.com" required>
+                        <input type="email" name="Email" placeholder="example@mail.com" required>
                     </div>
 
                     <div class="input-group">
                         <label>Місто *</label>
-                        <input type="text" placeholder="Київ" required>
+                        <input type="text" name="Місто" placeholder="Київ" required>
                     </div>
 
                     <div class="grid-2col">
                         <div class="input-group">
                             <label>Компанія *</label>
-                            <input type="text" placeholder="Назва клініки / салону" required>
+                            <input type="text" name="Компанія" placeholder="Назва клініки / салону" required>
                         </div>
                         <div class="input-group">
                             <label>Посада *</label>
-                            <input type="text" placeholder="Косметолог, дерматолог" required>
+                            <input type="text" name="Посада" placeholder="Косметолог, дерматолог" required>
                         </div>
                     </div>
 
                     <div class="input-group">
                         <label>Формат участі *</label>
-                        <select required>
+                        <select name="Формат участі" required>
                             <option value="" disabled selected>Оберіть формат</option>
-                            <option value="online">Онлайн формат (Безкоштовно)</option>
-                            <option value="offline">Очний формат (600 грн / Безкоштовно за запрошенням)</option>
+                            <option value="Онлайн">Онлайн формат (Безкоштовно)</option>
+                            <option value="Очно">Очний формат (600 грн / Безкоштовно за запрошенням)</option>
                         </select>
                     </div>
 
                     <div class="checkbox-container">
-                        <input type="checkbox" id="need-bpr">
+                        <input type="checkbox" name="Бали БПР" id="need-bpr" value="Потрібні бали БПР">
                         <label for="need-bpr">Мені потрібні бали БПР (з Вами зв'яжуться окремо)</label>
                     </div>
 
