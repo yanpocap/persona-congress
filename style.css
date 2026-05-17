@@ -1,358 +1,195 @@
-﻿/* Загальні стилі */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Елегантний класичний шрифт */
-}
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONA | Міжнародний打 конгрес</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Додаткові покращення дизайну */
+        .btn-gold {
+            transition: all 0.3s ease !important;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        }
+        .btn-pulse {
+            animation: pulseEffect 2s infinite;
+        }
+        @keyframes pulseEffect {
+            0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.5); }
+            70% { box-shadow: 0 0 0 10px rgba(212, 175, 55, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+        }
+        .program-card {
+            transition: all 0.3s ease !important;
+            border-left: 3px solid #d4af37 !important;
+        }
+        .program-card:hover {
+            transform: translateY(-4px);
+            background: #2a0812 !important;
+            border-left-color: #fff !important;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #d4af37, transparent);
+            margin: 40px 0;
+            border: none;
+        }
+        .bpr-box {
+            border-left: 4px solid #d4af37 !important;
+            background: rgba(212, 175, 55, 0.05) !important;
+            padding: 15px !important;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
 
-body {
-    background-color: #fcfaf7;
-    color: #2b2024;
-    line-height: 1.6;
-}
+    <header class="header">
+        <div class="container header-flex">
+            <div class="logo" style="letter-spacing: 3px; font-weight: 800;">PERSONA</div>
+            <div class="header-date" style="background: #d4af37; color: #1a050b; padding: 5px 15px; border-radius: 20px; font-weight: bold;">20 травня</div>
+        </div>
+    </header>
 
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
+    <section class="hero">
+        <div class="container">
+            <p class="hero-top-text" style="letter-spacing: 1px; color: #d4af37;">Шановні колеги! Запрошуємо до участі</p>
+            <h1 class="hero-title" style="line-height: 1.2;">МІЖНАРОДНИЙ КОНГРЕС<br><span class="gold-text" style="font-size: 1.2em; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">«PERSONA»</span></h1>
+            
+            <div class="special-badge" style="border-left: 4px solid #d4af37; background: rgba(255,255,255,0.03);">
+                В межах Конгресу з 14:00 відбудеться спеціалізована секція для фахівців естетичної медицини, косметології та beauty-індустрії:
+            </div>
 
-/* Колірна палітра оригінального сайту: Бордовий (#581825 або #420d17) та Золотий (#d4af37) */
-.gold-text {
-    color: #c5a059;
-}
+            <h2 class="section-title-main" style="font-weight: 400; color: #f5f5f5;">Beauty Longevity: нова ера персоналізованої косметології. Тренди, технології та ресурс шкіри.</h2>
+            
+            <div class="hero-meta">
+                <div class="meta-item">🔥 <strong>Формат проведення:</strong> очний (м. Київ) & онлайн-трансляція наживо</div>
+                <div class="meta-item">🌍 <strong>Місце проведення:</strong> м. Київ, вул. Госпітальна, 4, Premier Hotel Rus</div>
+            </div>
 
-/* Шапка сайту */
-.header {
-    background-color: #31050e;
-    color: #fff;
-    padding: 25px 0;
-    border-bottom: 2px solid #c5a059;
-}
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 35px; justify-content: center;">
+                <a href="#register-form" class="btn-gold" style="padding: 14px 28px; text-decoration: none; border-radius: 4px; font-weight: bold; text-align: center; min-width: 240px;">Реєстрація за запрошенням</a>
+                <a href="https://persona26.ticketforevent.com/" target="_blank" class="btn-gold btn-pulse" style="background: linear-gradient(135deg, #d4af37, #aa7c11); border: 1px solid #fff; padding: 14px 28px; text-decoration: none; border-radius: 4px; font-weight: bold; color: #1a050b; text-align: center; min-width: 240px;">Придбати квиток</a>
+            </div>
+        </div>
+    </section>
 
-.header-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <hr class="section-divider">
+<section class="program-section">
+        <div class="container">
+            <h2 class="block-title" style="text-align: center; margin-bottom: 30px;">У програмі секції</h2>
+            <div class="program-grid">
+                <div class="program-card"><span>🧬</span> Сучасні anti-age стратегії</div>
+                <div class="program-card"><span>🌱</span> Longevity-підходи у косметології</div>
+                <div class="program-card"><span>🔬</span> Епігенетика та ресурс шкіри</div>
+                <div class="program-card"><span>🧪</span> Генокосмецевтика і сигнальні пептиди</div>
+                <div class="program-card"><span>🍏</span> Нутрігенетика та метаболічне здоров’я</div>
+                <div class="program-card"><span>✨</span> Сучасний погляд на healthy aging і клітинний ресурс</div>
+            </div>
+        </div>
+    </section>
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    letter-spacing: 4px;
-    color: #fff;
-}
+    <hr class="section-divider">
 
-.header-date {
-    font-size: 1.1rem;
-    border: 1px solid #c5a059;
-    padding: 5px 15px;
-    letter-spacing: 1px;
-    color: #c5a059;
-}
+    <section class="details-section">
+        <div class="container details-grid">
+            
+            <div class="details-block" style="background: rgba(255,255,255,0.02); padding: 25px; border-radius: 6px;">
+                <h3 style="color: #d4af37; margin-top: 0;">🎁 Подарунки та розіграші</h3>
+                <ul style="padding-left: 20px; line-height: 1.6;">
+                    <li>Кожен очний учасник отримає подарунок від партнерів Конгресу.</li>
+                    <li>Серед учасників будуть розіграні цінні призи — <strong>сертифікати на 10 000 грн та 5 000 грн</strong>.</li>
+                    <li>Багато приємних сюрпризів, професійного нетворкінгу та нових знайомств!</li>
+                </ul>
+            </div>
 
-/* Головний екран (Hero) */
-.hero {
-    background: linear-gradient(135deg, #420d17 0%, #200208 100%);
-    color: #fff;
-    padding: 80px 0;
-    text-align: center;
-    border-bottom: 4px solid #c5a059;
-}
+            <div class="details-block" style="background: rgba(255,255,255,0.02); padding: 25px; border-radius: 6px;">
+                <h3 style="color: #d4af37; margin-top: 0;">🎓 Акредитація та бали БПР</h3>
+                <p class="accreditation" style="font-style: italic; margin-bottom: 15px;">Захід акредитовано Європейською акредитаційною радою з безперервної медичної освіти (EACCME) - 5,5 міжнародних кредитів EACCMEC® - UEMS.</p>
+                <div class="bpr-box">
+                    <h4 style="margin-top: 0; color: #fff;">🦉 Національний сертифікат БПР:</h4>
+                    <p style="margin: 5px 0;">• <strong>Онлайн-участь:</strong> 10 балів</p>
+                    <p style="margin: 5px 0;">• <strong>Очна участь:</strong> 19 балів (10 балів Конгрес + 9 балів майстер-клас)</p>
+                </div>
+            </div>
 
-.hero-top-text {
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #c5a059;
-    margin-bottom: 15px;
-}
+        </div>
+    </section>
 
-.hero-title {
-    font-size: 3.2rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
-    line-height: 1.2;
-}
+    <hr class="section-divider">
 
-.special-badge {
-    background-color: rgba(197, 160, 89, 0.15);
-    border: 1px solid #c5a059;
-    padding: 15px 20px;
-    max-width: 800px;
-    margin: 0 auto 30px;
-    font-size: 1.1rem;
-    font-style: italic;
-    line-height: 1.5;
-}
+    <section id="register-form" class="form-section">
+        <div class="container">
+            <div class="form-wrapper" style="box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(212, 175, 55, 0.1);">
+                <h2>Реєстрація учасника</h2>
+                <p class="form-subtitle">Маю безкоштовні запрошення від спікерів. Для участі, будь ласка, заповніть форму нижче:</p>
+                
+                <form action="https://formspree.io/f/maqkwreo" method="POST">
+                    <div class="input-group">
+                        <label>ПІБ *</label>
+                        <input type="text" name="name" placeholder="Іванов Іван Іванович" required>
+                    </div>
 
-.section-title-main {
-    font-size: 1.6rem;
-    font-weight: normal;
-    max-width: 850px;
-    margin: 0 auto 40px;
-    color: #f5ebe0;
-    font-family: Arial, sans-serif; /* Для контрасту сучасний шрифт */
-}
+                    <div class="input-group">
+                        <label>Телефон *</label>
+                        <input type="tel" name="phone" placeholder="+380" required>
+                    </div>
 
-.hero-meta {
-    margin-bottom: 40px;
-    font-family: Arial, sans-serif;
-}
+                    <div class="input-group">
+                        <label>Електронна пошта *</label>
+                        <input type="email" name="email" placeholder="example@mail.com" required>
+                    </div>
 
-.meta-item {
-    margin: 10px 0;
-    font-size: 1.1rem;
-}
+                    <div class="input-group">
+                        <label>Місто *</label>
+                        <input type="text" name="city" placeholder="Київ" required>
+                    </div>
+<div class="grid-2col">
+                        <div class="input-group">
+                            <label>Компанія *</label>
+                            <input type="text" name="company" placeholder="Назва клініки / салону" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Посада *</label>
+                            <input type="text" name="position" placeholder="Косметолог, дерматолог" required>
+                        </div>
+                    </div>
 
-.btn-gold {
-    display: inline-block;
-    background-color: #c5a059;
-    color: #fff;
-    padding: 15px 40px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 4px;
-    transition: background 0.3s;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
+                    <div class="input-group">
+                        <label>Формат участі *</label>
+                        <select name="format" required>
+                            <option value="" disabled selected>Оберіть формат</option>
+                            <option value="Online">Онлайн формат (Безкоштовно)</option>
+                            <option value="Offline">Очний формат (600 грн / Безкоштовно за запрошенням)</option>
+                        </select>
+                    </div>
 
-.btn-gold:hover {
-    background-color: #b08d4b;
-}
+                    <div class="checkbox-container" style="margin-top: 20px;">
+                        <input type="checkbox" name="bpr_points" id="need-bpr" value="Yes">
+                        <label for="need-bpr" style="cursor: pointer;">Мені потрібні бали БПР (з Вами зв'яжуться окремо)</label>
+                    </div>
 
-/* Програма секції */
-.program-section {
-    padding: 60px 0;
-    background-color: #fff;
-}
+                    <button type="submit" class="btn-submit" style="letter-spacing: 1px; font-weight: bold; text-transform: uppercase; margin-top: 25px;">Надіслати інформацію</button>
+                </form> <div class="official-link" style="margin-top: 25px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 15px;">
+                    🔎 Детальна інформація на офіційному сайті: <a href="http://asprofosvit.com/persona" target="_blank" style="color: #d4af37;">asprofosvit.com/persona</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.block-title {
-    text-align: center;
-    font-size: 2rem;
-    color: #420d17;
-    margin-bottom: 40px;
-    position: relative;
-}
+    <footer class="footer" style="border-top: 1px solid rgba(212, 175, 55, 0.1); padding: 20px 0;">
+        <div class="container">
+            <p style="opacity: 0.7; font-size: 0.85rem;">© 2026 Міжнародний конгрес PERSONA. Всі права захищені.</p>
+        </div>
+    </footer>
 
-.block-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 2px;
-    background-color: #c5a059;
-    margin: 10px auto 0;
-}
-
-.program-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.program-card {
-    background-color: #fdfbf9;
-    border: 1px solid #eae1d8;
-    padding: 20px;
-    font-size: 1.1rem;
-    border-left: 4px solid #420d17;
-    font-family: Arial, sans-serif;
-}
-
-.program-card span {
-    margin-right: 8px;
-}
-
-/* Бонуси та Сертифікати */
-.details-section {
-    padding: 60px 0;
-    background-color: #f7f3ed;
-}
-
-.details-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 40px;
-}
-
-.details-block {
-    background-color: #fff;
-    padding: 30px;
-    border: 1px solid #e1d7cb;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-}
-
-.details-block h3 {
-    color: #420d17;
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #eae1d8;
-    padding-bottom: 10px;
-}
-
-.details-block ul {
-    list-style-type: none;
-}
-
-.details-block li {
-    margin-bottom: 15px;
-    position: relative;
-    padding-left: 20px;
-    font-family: Arial, sans-serif;
-}
-
-.details-block li::before {
-    content: '•';
-    color: #c5a059;
-    font-size: 1.5rem;
-    position: absolute;
-    left: 0;
-    top: -4px;
-}
-.accreditation {
-    font-style: italic;
-    margin-bottom: 20px;
-    color: #555;
-}
-
-.bpr-box {
-    background-color: #fcf8f2;
-    border: 1px dashed #c5a059;
-    padding: 15px;
-}
-
-.bpr-box h4 {
-    color: #420d17;
-    margin-bottom: 10px;
-}
-
-.bpr-box p {
-    font-family: Arial, sans-serif;
-    margin-bottom: 5px;
-}
-
-/* Форма реєстрації */
-.form-section {
-    padding: 80px 0;
-    background-color: #fff;
-}
-
-.form-wrapper {
-    max-width: 650px;
-    margin: 0 auto;
-    border: 1px solid #e1d7cb;
-    padding: 40px;
-    background-color: #fdfcfb;
-    box-shadow: 0 10px 30px rgba(66, 13, 23, 0.05);
-}
-
-.form-wrapper h2 {
-    text-align: center;
-    color: #420d17;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.form-subtitle {
-    text-align: center;
-    color: #666;
-    margin-bottom: 30px;
-    font-style: italic;
-}
-
-.input-group {
-    margin-bottom: 20px;
-    font-family: Arial, sans-serif;
-}
-
-.input-group label {
-    display: block;
-    margin-bottom: 7px;
-    font-weight: bold;
-    color: #420d17;
-    font-size: 0.9rem;
-}
-
-.input-group input, .input-group select {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 1rem;
-    font-family: Arial, sans-serif;
-}
-
-.input-group input:focus, .input-group select:focus {
-    outline: none;
-    border-color: #c5a059;
-}
-
-.grid-2col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.checkbox-container {
-    margin: 25px 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-family: Arial, sans-serif;
-}
-
-.checkbox-container input {
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-}
-
-.btn-submit {
-    width: 100%;
-    background-color: #420d17;
-    color: #fff;
-    border: none;
-    padding: 15px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background 0.3s;
-    font-family: Arial, sans-serif;
-}
-
-.btn-submit:hover {
-    background-color: #5e1422;
-}
-
-.official-link {
-    text-align: center;
-    margin-top: 25px;
-    font-size: 0.95rem;
-    font-family: Arial, sans-serif;
-}
-
-.official-link a {
-    color: #420d17;
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 1px solid #420d17;
-}
-
-/* Підвал */
-.footer {
-    background-color: #200208;
-    color: #8c767a;
-    text-align: center;
-    padding: 25px 0;
-    font-size: 0.9rem;
-    font-family: Arial, sans-serif;
-    border-top: 2px solid #c5a059;
-}
+</body>
+</html>
